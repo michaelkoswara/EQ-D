@@ -15,8 +15,8 @@ const App:React.FC = () => {
       <Router>
         <Layout>
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/list" component={List}/>
+            <Route exact path="/EQ-D" component={Home}/>
+            <Route exact path="/EQD/list" component={List}/>
           </Switch>
         </Layout>
       </Router> 
