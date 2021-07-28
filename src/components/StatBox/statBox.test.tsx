@@ -1,23 +1,21 @@
-import { render, cleanup } from '@testing-library/react';
-import StatBox, { IStatBox } from './StatBox';
+import { render, cleanup } from "@testing-library/react";
+import StatBox, { IStatBox } from "./StatBox";
+import React from "react";
 
 afterEach(cleanup);
 
-
 describe("<StatBox/>", () => {
-  it('renders the StatBox with the correct title, type and value', () => {
-    const statBoxParam:IStatBox = {
-        title: "Countries in the world",
-        type: "informational",
-        value: 195
+  it("renders the StatBox with the correct title, type and value", () => {
+    const statBoxParam: IStatBox = {
+      title: "Countries in the world",
+      type: "informational",
+      value: 195,
     };
 
-    const {getByTestId, getByText, container} = render(<StatBox {...statBoxParam} />);
+    const { getByText, container } = render(<StatBox {...statBoxParam} />);
 
     expect(getByText(statBoxParam.title)).toBeInTheDocument();
     expect(getByText(statBoxParam.value)).toBeInTheDocument();
     expect(container.querySelector(".informational")).toBeTruthy();
   });
 });
-
-

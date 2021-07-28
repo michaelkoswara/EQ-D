@@ -7,11 +7,11 @@ import StatBox from "./StatBox/StatBox";
 import BarChart from "./Chart/BarChart";
 
 export {
-    Layout,
-    ErrorBox,
-    CustomTable,
-    Spinner,
-    CustomButton,
-    StatBox,
-    BarChart
+  Layout,
+  ErrorBox,
+  CustomTable,
+  Spinner,
+  CustomButton,
+  StatBox,
+  BarChart,
 };
