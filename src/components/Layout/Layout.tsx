@@ -15,11 +15,11 @@ const Layout:React.FC = ({children}) => {
             <Header data-testid="header">
                 <Title style={{float:"left",color:"white",fontSize:"1.5rem",padding:"1rem 2rem 0 0"}}>{messages.appTitle}</Title>
                 <Menu theme="dark" mode="horizontal" selectedKeys={[location.pathname]}>
-                    <Menu.Item key="/">
-                        <Link to="/">{`Home`}</Link>
+                    <Menu.Item key="/EQ-D">
+                        <Link to="/EQ-D">{`Home`}</Link>
                     </Menu.Item>
-                    <Menu.Item key="/list">
-                        <Link to="/list">{`List`}</Link>
+                    <Menu.Item key="/EQ-D/list">
+                        <Link to="/EQ-D/list">{`List`}</Link>
                     </Menu.Item>
                 </Menu>
             </Header>

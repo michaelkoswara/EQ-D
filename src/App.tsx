@@ -16,7 +16,7 @@ const App:React.FC = () => {
         <Layout>
           <Switch>
             <Route exact path="/EQ-D" component={Home}/>
-            <Route exact path="/EQD/list" component={List}/>
+            <Route exact path="/EQ-D/list" component={List}/>
           </Switch>
         </Layout>
       </Router> 
