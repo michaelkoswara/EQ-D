@@ -1,0 +1,17 @@
+.ant-statistic {
+    &.danger {
+        .ant-statistic-content {
+            color: #cf1322;
+        }
+    }
+    &.good {
+        .ant-statistic-content {
+            color: #3f8600;
+        }
+    }
+    &.informational {
+        .ant-statistic-content {
+            color: navy;
+        }
+    }
+}
