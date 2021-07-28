@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { EQDataContext } from '../providers/EqDataProvider';
 import { Row, Col, Card, Typography } from 'antd';
-import {CustomButton, ErrorBox, Spinner, StatBox} from '../components/';
+import {BarChart, CustomButton, ErrorBox, Spinner, StatBox} from '../components/';
 import messages from '../utils/messages';
 import { findMaxMinArray } from '../utils/findMaxMinArray';
 import { findAverageInArray } from '../utils/findAverageInArray';
@@ -36,15 +36,37 @@ const Home:React.FC = ():JSX.Element => {
                         <StatBox title={messages.statAvg} numberPrecision={2} type="informational" value={findAverageInArray(eqList.map(i => i.magnitude))} />
                     </Card>
                 </Col>
-                <Col xs={24}>
+                <Col xs={24} className="mb-2">
                     <Row>
                         <Col xs={24}><CustomButton type="primary" onClick={refreshList} text={messages.clickToRefresh}/></Col>
                         <Col xs={24}><Paragraph className="mt-1">last refreshed on {lastRefreshed.toLocaleString("DE")}</Paragraph></Col>
                     </Row>
                 </Col>
+                <Col xs={24}>
+                    <Typography>
+                        <Title level={3}>{messages.homepageGraphTitle}</Title>
+                    </Typography>
+                    <BarChart xField="mag" yField="numOfOccurrence" data={buildChartData()}/>
+                </Col>
             </>
         )
     };
+
+    const buildChartData = () => {
+        return [
+            {mag:'0', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 0).length},
+            {mag:'1', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 1).length},
+            {mag:'2', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 2).length},
+            {mag:'3', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 3).length},
+            {mag:'4', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 4).length},
+            {mag:'5', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 5).length},
+            {mag:'6', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 6).length},
+            {mag:'7', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 7).length},
+            {mag:'8', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 8).length},
+            {mag:'9', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 9).length},
+            {mag:'10', numOfOccurrence: eqList.filter(val => Math.floor(val.magnitude) === 10).length},
+        ]
+    }
 
     const renderAlert = () => {
         return ( 

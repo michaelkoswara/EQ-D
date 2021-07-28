@@ -1,6 +1,6 @@
 # Earthquake Data
 
 todo:
-readme
+readme (local setup , deploying, github page url sensitivity)
 format
 

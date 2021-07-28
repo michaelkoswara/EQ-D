@@ -4,6 +4,7 @@ import CustomTable from "./CustomTable/CustomTable";
 import Spinner from "./Spinner/Spinner";
 import CustomButton from "./CustomButton/CustomButton";
 import StatBox from "./StatBox/StatBox";
+import BarChart from "./Chart/BarChart";
 
 export {
     Layout,
@@ -11,5 +12,6 @@ export {
     CustomTable,
     Spinner,
     CustomButton,
-    StatBox
+    StatBox,
+    BarChart
 };
