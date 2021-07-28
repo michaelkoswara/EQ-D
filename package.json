@@ -1,6 +1,6 @@
 {
   "name": "earthquake-data",
-  "homepage": "http://michaelkoswara.github.io/earthquake-data",
+  "homepage": "http://michaelkoswara.github.io/eq-d-live",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
