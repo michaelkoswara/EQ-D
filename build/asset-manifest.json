@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/eq-d-live/static/css/main.f3cbd574.chunk.css",
+    "main.js": "/eq-d-live/static/js/main.6d59bdb5.chunk.js",
+    "main.js.map": "/eq-d-live/static/js/main.6d59bdb5.chunk.js.map",
+    "runtime-main.js": "/eq-d-live/static/js/runtime-main.328cd6e0.js",
+    "runtime-main.js.map": "/eq-d-live/static/js/runtime-main.328cd6e0.js.map",
+    "static/css/2.aaf4ed17.chunk.css": "/eq-d-live/static/css/2.aaf4ed17.chunk.css",
+    "static/js/2.d6f8249d.chunk.js": "/eq-d-live/static/js/2.d6f8249d.chunk.js",
+    "static/js/2.d6f8249d.chunk.js.map": "/eq-d-live/static/js/2.d6f8249d.chunk.js.map",
+    "index.html": "/eq-d-live/index.html",
+    "static/css/2.aaf4ed17.chunk.css.map": "/eq-d-live/static/css/2.aaf4ed17.chunk.css.map",
+    "static/css/main.f3cbd574.chunk.css.map": "/eq-d-live/static/css/main.f3cbd574.chunk.css.map",
+    "static/js/2.d6f8249d.chunk.js.LICENSE.txt": "/eq-d-live/static/js/2.d6f8249d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.328cd6e0.js",
+    "static/css/2.aaf4ed17.chunk.css",
+    "static/js/2.d6f8249d.chunk.js",
+    "static/css/main.f3cbd574.chunk.css",
+    "static/js/main.6d59bdb5.chunk.js"
+  ]
+}
