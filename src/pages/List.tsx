@@ -22,7 +22,7 @@ const List: React.FC = (): JSX.Element => {
             className="mt-1 mb-1"
           />
           <Paragraph className="mt-1">
-            last refreshed on {lastRefreshed.toLocaleString("DE")}
+            {messages.lastRefreshed} {lastRefreshed.toLocaleString("DE")}
           </Paragraph>
         </div>
       </Col>

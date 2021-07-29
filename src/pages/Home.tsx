@@ -70,7 +70,7 @@ const Home: React.FC = (): JSX.Element => {
             </Col>
             <Col xs={24}>
               <Paragraph className="mt-1">
-                last refreshed on {lastRefreshed.toLocaleString("DE")}
+                {messages.lastRefreshed} {lastRefreshed.toLocaleString("DE")}
               </Paragraph>
             </Col>
           </Row>
@@ -80,10 +80,10 @@ const Home: React.FC = (): JSX.Element => {
             <Title level={3}>{messages.homepageGraphTitle}</Title>
             <ul className="mb-2">
               <li>
-                <Paragraph>x-axis: magnitude</Paragraph>
+                <Paragraph>{messages.homeGraphX}</Paragraph>
               </li>
               <li>
-                <Paragraph>y-axis: number of occurrences</Paragraph>
+                <Paragraph>{messages.homeGraphY}</Paragraph>
               </li>
             </ul>
           </Typography>
