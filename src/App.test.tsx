@@ -1,4 +1,4 @@
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen, cleanup, waitFor } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import React from "react";
@@ -13,11 +13,13 @@ jest.mock("react-router-dom", () => ({
 }));
 
 test("renders the root component without crashing", async () => {
-  render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  );
+  await waitFor(() => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+  });
   const appTitle = screen.getByText(/EQ-D/i);
   expect(appTitle).toBeInTheDocument();
 });

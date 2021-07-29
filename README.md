@@ -9,7 +9,7 @@ This is a simple web application that projects data from the USGS "Past Day" Ear
 **The technologies used:**
 - React JS (version 17.0.2 at least)
 - TypeScript (for maintainability)
-- Antd UI framework 
+- [Antd UI framework](https://ant.design/)
 - Antd chart framework
 - Github pages for deployment (live site)
 

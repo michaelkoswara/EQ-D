@@ -3,6 +3,7 @@ import { Layout as AntLayout, Menu } from "antd";
 import { NavLink, useLocation } from "react-router-dom";
 import Title from "antd/lib/typography/Title";
 import messages from "../../utils/messages";
+import "./layout.scss";
 
 const { Header, Content, Footer } = AntLayout;
 

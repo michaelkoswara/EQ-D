@@ -11,6 +11,7 @@ import {
 import messages from "../utils/messages";
 import { findMaxMinArray } from "../utils/findMaxMinArray";
 import { findAverageInArray } from "../utils/findAverageInArray";
+import { buildEqChartData } from "../utils/buildEqChartData";
 const { Title, Paragraph } = Typography;
 
 const Home: React.FC = (): JSX.Element => {
@@ -77,76 +78,23 @@ const Home: React.FC = (): JSX.Element => {
         <Col xs={24}>
           <Typography>
             <Title level={3}>{messages.homepageGraphTitle}</Title>
+            <ul className="mb-2">
+              <li>
+                <Paragraph>x-axis: magnitude</Paragraph>
+              </li>
+              <li>
+                <Paragraph>y-axis: number of occurrences</Paragraph>
+              </li>
+            </ul>
           </Typography>
           <BarChart
             xField="mag"
             yField="numOfOccurrence"
-            data={buildChartData()}
+            data={buildEqChartData(eqList)}
           />
         </Col>
       </>
     );
-  };
-
-  const buildChartData = () => {
-    return [
-      {
-        mag: "0",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 0)
-          .length,
-      },
-      {
-        mag: "1",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 1)
-          .length,
-      },
-      {
-        mag: "2",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 2)
-          .length,
-      },
-      {
-        mag: "3",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 3)
-          .length,
-      },
-      {
-        mag: "4",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 4)
-          .length,
-      },
-      {
-        mag: "5",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 5)
-          .length,
-      },
-      {
-        mag: "6",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 6)
-          .length,
-      },
-      {
-        mag: "7",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 7)
-          .length,
-      },
-      {
-        mag: "8",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 8)
-          .length,
-      },
-      {
-        mag: "9",
-        numOfOccurrence: eqList.filter((val) => Math.floor(val.magnitude) === 9)
-          .length,
-      },
-      {
-        mag: "10",
-        numOfOccurrence: eqList.filter(
-          (val) => Math.floor(val.magnitude) === 10
-        ).length,
-      },
-    ];
   };
 
   const renderAlert = () => {

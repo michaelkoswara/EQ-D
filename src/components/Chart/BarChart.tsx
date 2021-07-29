@@ -25,7 +25,7 @@ const BarChart = ({
     },
   };
 
-  return <Column {...props} />;
+  return <Column {...props} data-testid="barchart" />;
 };
 
 export default BarChart;
