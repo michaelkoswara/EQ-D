@@ -54,6 +54,7 @@ const List: React.FC = (): JSX.Element => {
         <Typography>
           <Title>{messages.listPageHeader}</Title>
           <Paragraph>{messages.listPageBody}</Paragraph>
+          <Paragraph>{messages.listPageSecondParagraph}</Paragraph>
         </Typography>
       </Row>
       <Row gutter={16} justify={isLoading ? "center" : "start"}>

@@ -1,6 +1,6 @@
+// prettier-ignore
 const messages = {
-  networkError:
-    "Unfortunately a network error was encountered. Either the USGS API is down, or there is a problem with your internet connection. Please try again to refresh using the 'Refresh' button or try later. Thank you !",
+  networkError: "Unfortunately a network error was encountered. Either the USGS API is down, or there is a problem with your internet connection. Please try again to refresh using the 'Refresh' button or try later. Thank you !",
   appTitle: "EQ-D",
   statTotal: "Total Earthquakes in the Past Day (rolling basis)",
   statMax: "Highest Magnitude Reported",
@@ -9,8 +9,8 @@ const messages = {
   loading: "Loading...",
   clickToRefresh: "Click to Refresh Data",
   listPageHeader: "Tabulated Data of All Earthquakes (Past 24 hours)",
-  listPageBody:
-    "This table list the important information from the USGS 'Past Day' API of reported earthquakes around the world. To sort by magnitude, simply click on the 'Magnitude' column header to toggle through the desired sort order (including to reset with no sorting).",
+  listPageBody: "This table list the important information from the USGS 'Past Day' API of reported earthquakes around the world. To sort by magnitude (on medium to large screens), simply click on the 'Magnitude' column header to toggle through the desired sort order (including to reset with no sorting).",
+  listPageSecondParagraph: "The table columns are responsive and will shrink down to 1 column on mobile screens to combine several data into that column.",
   homepageHeader: "Synopsis",
   homepageGraphTitle: "Number of Earthquakes per magnitude (24 hours)",
   homeGraphX: "x-axis: magnitude",

@@ -17,11 +17,13 @@ module.exports = {
       'plugin:prettier/recommended'
     ],
     plugins: [ 
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     rules: {
         "react/prop-types": 0,
         "@typescript-eslint/no-explicit-any": 0,
         "react/display-name":0
     }
+    
 }
